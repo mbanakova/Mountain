@@ -1,0 +1,733 @@
+body {
+    margin: 0;
+    padding: 0;
+    min-width: 1364px;
+    font-family: 'Roboto', 'Nanum Gothic', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #061b28;
+    text-align: left;
+    line-height: auto;
+    background: url(img/everest.jpg) no-repeat top;
+}
+
+.visually-hidden {
+    position: absolute;
+    clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+    clip: rect(1px, 1px, 1px, 1px);
+    padding: 0;
+    border: 0;
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+}
+
+.container{
+    width: 1170px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+h2 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 52px;
+    font-weight: 600;
+    line-height: 115%;
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style: none;   
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+.header-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 38px 0 0 0;
+}
+
+.main-nav {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+}
+
+.nav-items{
+    display: flex;
+    margin: 0 0 0 75px;
+    padding: 0;
+}
+
+.nav-item {
+    padding-right: 10px;
+}
+
+.main-nav a {
+    color: #fcfcfc;
+    padding: 5px 10px;
+    margin: 0;
+}
+
+.nav-item:hover a {
+    box-shadow: 0 0 10px 5px #fcfcfc; 
+}
+
+.main-nav li:active {
+    opacity: 0.5;
+    background-color: #45545E;
+}
+
+.header-links {
+   display: flex;
+}
+
+.our-phone {
+    margin-top: 5px;
+    padding: 0px 10px;
+    color: #fcfcfc;
+    vertical-align: middle;
+}
+
+.our-phone:hover {
+    transform: scale(1.15);
+}
+
+.our-phone:active {
+    opacity: 0.5;
+    color: #45545E;
+}
+
+.icon {
+    width: 35px;
+    height: 35px;
+    background-color: rgba(252, 252, 252, 0.4);
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.icon:hover {
+    box-shadow: 0 0 10px 5px #fcfcfc; 
+}
+
+.icon:active {
+    opacity: 0.5;
+    background-color: #45545E;
+}
+
+.icon.magnifier {
+    background-image: url(img/magnifier.svg);
+    font-size: 0;
+    margin-left: 43px;
+}
+
+.icon.profile {
+    background-image: url(img/profile.svg);
+    font-size: 0;
+    margin-left: 30px;
+}
+
+
+/* Основное */
+
+.promo-tour {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.page-title {
+    font-family: 'Oswald', sans-serif;
+    font-size: 98px;
+    font-weight: 600;
+    margin: 162px 0 0 0;
+    padding: 0;   
+    color: #fcfcfc;
+    text-align: center;
+}
+
+.main-page-button {
+    color: #fcfcfc;
+    text-decoration: none;
+    border: 2px solid #fcfcfc;
+    padding: 11px 42px;
+    font-weight: 500;
+    line-height: 19px;
+    margin: 22px 0 204px 0;
+}
+
+.main-page-button:hover {
+background: linear-gradient(#cbd4dade 0%, #78899bee 35%, #5a7491d5 50%, #3c5772cc 51%, #39577a8e 100%);
+}
+
+.main-page-button:active {
+opacity: 0.5;
+}
+
+/* About */
+
+.section-about {
+    background: url(img/map-about-us.jpg) no-repeat;
+    margin-top: 134px;
+    background-position: 100% 62%;
+    background-size: auto;
+    overflow: hidden; 
+}
+
+.section-about .container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  flex-basis: 478px;
+}
+
+.section-about .section-title {
+    flex-basis: 478px;
+}
+
+.about-text {
+flex-basis: 350px;
+font-size: 18px;
+line-height: 150%;
+margin: 39px 500px 0 0;
+padding: 0;
+}
+
+.about-text:last-of-type {
+margin-top: 18px;
+}
+
+
+/* Popular  */
+
+.section-popular {
+    margin-top: 130px;
+}
+
+.section-popular .section-title {
+    text-align: center;
+}
+
+.popular-tours {
+    margin-top: 75px;
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+
+.tour {
+    display: flex;
+    flex-direction: column;
+}
+
+.popular-title {
+    font-family: 'Oswald', sans-serif;
+    font-size: 26px;
+    font-weight: 500;
+    margin: 106px 0 0 0;
+}
+
+.popular-link {
+    text-decoration: none;
+    color: #061b28;
+    margin: 0 0 0 40px;
+}
+
+.tour-description {
+    font-size: 18px;
+    margin: 14px 0 0 40px;
+    padding: 0;
+}
+
+.tour-description span {
+    padding: 0 11px 0 0;
+    border-right: 1px solid black;
+}
+
+.tour-description span:nth-child(2) {
+padding-left: 6px;
+}
+
+.tour-description span:last-child {
+    padding-left: 4px;
+    border: none;
+}
+.tour-lvl {
+    font-size: 18px;
+    margin: 15px 0 0 40px;
+    padding: 0;
+}
+
+.tour-belukha {
+    background: linear-gradient(180deg, rgba(249, 249, 250, 0) 0%, rgba(249, 249, 250, 0.9) 100%), url(img/belukha.jpg) no-repeat;
+    width: 370px;
+    height: 326px;
+}
+
+.tour-elbrus {
+    background: linear-gradient(180deg, rgba(249, 249, 250, 0) 0%, rgba(249, 249, 250, 0.9) 100%), url(img/elbrus.jpg) no-repeat;
+    width: 370px;
+    height: 326px;
+}
+
+.tour-kilimanjaro {
+    background: linear-gradient(180deg, rgba(249, 249, 250, 0) 0%, rgba(249, 249, 250, 0.9) 100%), url(img/kilimanjaro.jpg) no-repeat;
+    width: 370px;
+    height: 326px;
+} 
+
+.tour-location {
+    margin: 38px 0 0 40px;
+    padding-left: 20px;
+    background: url('img/spot.png') no-repeat 0px 0px;
+    width: 13px;
+    height: 16px;
+}
+
+.tour-lvl {
+    padding-left: 20px;
+    background: url(img/middle-lvl.png) no-repeat 0 2px;
+}
+    
+.tour-lvl.easy {
+    background: url(img/easy-lvl.png) no-repeat 0 2px;
+}
+
+.bookmark {
+    background-image: url(img/bookmark.png);
+    font-size: 0;
+    align-self: flex-end;
+    margin: -14px 40px 0 0;
+}
+
+.arrows {
+    display: flex;
+    justify-content: flex-end;
+    margin: 38px 0 20px 0;
+}
+.arrow-left {
+    background: url(img/arrow-left.svg) no-repeat 50% 50%;
+    background-color: #d2dfe4;
+    font-size: 0;
+    margin-right: 23px;
+}
+
+.arrow-right {
+    background: url(img/arrow-right.svg) no-repeat 50% 50%;
+    font-size: 0;
+    background-color: #d2dfe4;
+}
+
+.arrow-left:hover,
+.arrow-right:hover {
+    box-shadow: 0 0 5px 5px #d2dfe4; 
+}
+/* Russia */
+
+
+.section-russia {
+    background-color: rgb(7, 36, 53);
+    background: linear-gradient(0deg, rgba(6, 27, 40, 0.92), rgba(6, 27, 40, 0.92)), 
+    url(img/Russia-bg.jpg) no-repeat 50% 50%;
+    background-size: cover;
+    color: #fcfcfc;
+    margin: 133px 0 0 0;
+}
+
+.section-russia .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.section-russia .section-title {
+    text-align: center;
+    padding-top: 92px;
+}
+
+.section-russia p {
+    text-align: center;
+    font-size: 18px;
+    line-height: 140%;
+    padding: 0;
+    margin: 15px 0 48px 0;
+    max-width: 243px;
+}
+
+.russia-price-list {
+    border-collapse: collapse;
+    width: 830px;
+    margin-bottom: 50px;
+}
+
+.russia-price-list th {
+    font-size: 18px;
+    color: #a7aeb4;
+    padding-bottom: 10px;
+}
+
+.russia-price-list tr {
+    font-size: 22px;
+    font-weight: 500;
+    vertical-align: middle;
+    border-bottom: 1px solid #45545E;
+    box-sizing: border-box;
+}
+
+.russia-price-list tr:not(:first-child):hover {
+    background-color: rgba(4, 19, 32, 0.719);
+    box-shadow: 0 0 12px 3px #fcfcfc; 
+}
+
+.russia-price-list td {
+    border-collapse: collapse;
+    padding: 20px 0 19px 0;
+}
+
+.column1 {
+    text-align: center;
+    width: 285px;
+}
+
+.column2, .column3, .column4 {
+    text-align: left;
+}
+
+.column2 {
+    width: 170px;
+}
+
+.column3 {
+   width: 178px; 
+}
+
+.russia-button {
+    margin-bottom: 100px;
+    text-decoration: none;
+    border: 2px solid #fcfcfc;
+    padding: 12px 32px 12px 32px;
+    font-weight: 500;
+    line-height: 19px;
+    text-decoration: none;
+    color: #fcfcfc;
+}
+
+.russia-button:hover {
+    background: linear-gradient(#cbd4dade 0%, #78899bee 35%, #5a7491d5 50%, #3c5772cc 51%, #1622318e 100%);
+}
+
+.russia-button:active {
+    opacity: 0.5;
+}
+
+
+/* Блог */
+
+.section-blog {
+    margin: 135px 0 0 0;
+}
+
+.section-blog .section-title {
+    text-align: center;
+}
+
+.tabs {
+    margin-top: 72px;
+    display: flex;
+}
+
+.tabs-items {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 47px;
+}
+
+.tabs-item {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 400px;
+    padding-top: 27px;
+    margin-right: 70px;
+    height: 100px;
+    text-decoration: none;
+    border-bottom: 1px solid #061B28;
+}
+
+.tabs-item:hover {
+    background-color: #061B28;
+}
+.tabs-item:hover p {
+    color: #fcfcfc; 
+    font-weight: normal;
+}
+.tabs-items time {
+    margin: 0;
+    padding: 0 0 0 30px;
+    color: #7E8386;
+    font-size: 14px;
+}
+
+.tabs-items p {
+    color: #061B28;
+    font-size: 18px;
+    line-height: 140%;
+    padding: 0 0 0 30px;
+    margin: 10px 15px 0 0;
+}
+
+.blog-button {
+    background: #ec5118;
+    text-align: center;
+    text-decoration: none;
+    color: #fcfcfc;
+    margin: 50px 0 0 0;
+    padding: 15px 127px;
+}
+
+.blog-button:hover {
+    background: #061B28;
+}
+
+.blog-button:active {
+    opacity: 0.5;
+}
+
+.tab-content img {
+margin-bottom: 32px;
+}
+
+.tab-content time {
+    font-size: 14px;
+    color: #626f77; 
+}
+
+.tab-content h4 {
+    font-size: 22px;
+    margin: 12px 0 0 0;
+}
+.tab-content p {
+    margin: 23px 0 0 0;
+    padding-right: 10px;
+    line-height: 150%;
+}
+
+.tab-content p:last-of-type {
+    margin-top: 12px;
+}
+.tabs-content {
+    width: 700px;
+    height: 725px;
+    overflow: hidden;
+    list-style: none;
+}
+
+.tab-content {
+    width: 700px;
+    height: 725px;
+}
+
+/* Форма */
+
+.section-form {
+    margin: 138px 0 0 0;
+    background: #061b28;
+    color: #fcfcfc;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.form-left {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 525px;
+    padding-right: 60px;
+}
+
+.section-form .form-title {
+    padding-top: 74px;
+    line-height: 115%;
+    width: 370px;
+    margin: 0;
+}
+
+.form-text {
+    margin-top: 30px;
+    font-size: 18px;
+    line-height: 150%;
+    width: 431px;
+    margin-bottom: 10px;
+}
+
+.form-confirm {
+    font-size: 14px;
+    line-height: 140%;
+}
+
+.section-form input {
+    background-color: #061B28;
+    border: 1px solid #061B28;
+    color: #7E8386;
+    font-size: 16px;
+    line-height: 150%;
+    border-bottom: 1px solid #45545E;
+    vertical-align: bottom;
+    width: 525px;
+    height: 58px;
+}
+
+.section-form button {
+    padding: 0;
+    width: 525px;
+    border: none;
+    font: inherit;
+    color: #fcfcfc;
+    background-color: #ec5118;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 140%;
+    height: 52px;
+    margin-top: 33px;
+}
+
+.section-form button:hover {
+    background: #061B28;
+    box-shadow: 0 0 10px 5px #fcfcfc; 
+}
+
+.section-form button:active {
+    opacity: 0.5;
+}
+
+.form-confirm {
+    font-size: 14px;
+    margin: 17px 0 0 0;
+    width: 460px;
+}
+  /* Контакты */
+
+.section-contacts {
+    margin-top: 140px;
+}
+
+.section-contacts .container {
+    display: flex;
+}
+
+.contacts-right {
+    margin-left: 70px;
+    display: flex;
+    flex-direction: column;
+}
+
+.contacts {
+    margin-top: -6px;
+}
+
+.contacts-list {
+    margin-top: 20px;
+}
+
+.contacts-list dt {
+    font-size: 18px;
+    line-height: 150%;
+    margin: 30px 0 0 0;
+    padding: 0;
+}
+
+.contacts-list dd {
+    font-size: 22px;
+    line-height: 140%;
+    font-weight: 500;
+    margin: 2px 0 0 0;
+    padding: 0;
+}
+
+.contacts-list a {
+    color: #061b28;
+}
+.social {
+    display: flex;
+    font-size: 0;
+    margin: 7px 0 0 0;
+}
+
+.social-item {
+    padding: 0 5px;
+}
+
+.social a {
+font-size: 0;
+margin-top: 7px;
+padding: 20px;
+}
+
+.social-button {
+    width: 25px;
+    height: 30px;
+    margin: 0;
+}
+
+.social-button:hover,
+.social-button.fb:hover {
+    background-color: #ccdbe7;
+    border-radius: 50%;
+}
+  
+.social-button:active {
+    opacity: 0.5;
+}
+
+.social-button.fb {
+background: url(img/facebook-icon.svg);
+background-repeat: no-repeat;
+background-position: center;
+
+}
+
+.social-button.insta {
+background-image: url(img/instagram-icon.svg);
+background-repeat: no-repeat;
+background-position: center;
+}
+
+.social-button.tw {
+background-image: url(img/twitter-icon.svg);
+background-repeat: no-repeat;
+background-position: center;
+}
+
+/* Футер */
+
+.main-footer {
+    margin-top: 118px;
+    background: #061b28;
+    color: #fcfcfc;
+}
+
+.main-footer .container {
+    padding: 50px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.main-footer a {
+text-decoration: none;
+color: #fcfcfc;
+}
+
+.copyright,
+.policy {
+    margin: 0;
+    font-size: 12px;
+}
